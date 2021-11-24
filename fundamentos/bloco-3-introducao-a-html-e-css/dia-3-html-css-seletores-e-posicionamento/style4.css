@@ -10,6 +10,7 @@ div:nth-child(4) {
 }
 div:nth-child(5) {
     background-color: blueviolet;
+    height: 200px;
 }
 div:nth-child(6) {
     background-color: darkblue;
