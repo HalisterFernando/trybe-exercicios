@@ -25,3 +25,18 @@ li {
 li em {
     font-weight: 700;
 }
+
+.ldp li:nth-child(1) {
+    color: blue
+}
+
+.ldp li:nth-child(2) {
+    color: blue;
+    background-color: pink;
+    
+}
+
+.ldp li:nth-child(3) {
+    color: blue;
+    background-color: pink;
+}
