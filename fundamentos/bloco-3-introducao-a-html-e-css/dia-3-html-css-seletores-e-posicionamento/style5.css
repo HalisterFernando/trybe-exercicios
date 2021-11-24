@@ -40,3 +40,29 @@ li em {
     color: blue;
     background-color: pink;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sites li:nth-child(1):hover {    
+    font-weight: 700;
+    color: orange
+}
+.sites li:nth-child(2):hover {
+    font-weight: 700;
+    color: green
+}
+.sites li:nth-child(3):hover {
+    font-weight: 700;
+    color: black
+}
+.sites li:nth-child(4):hover {
+    font-weight: 700;
+    color: yellow
+}
+.sites li:nth-child(5):hover {
+    font-weight: 700;
+    color: greenyellow
+}
