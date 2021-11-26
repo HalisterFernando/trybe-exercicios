@@ -1,9 +1,5 @@
-// Retorna o maior dos 3 números
+//  Dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
 
-const alfa = 9;
-const beta = 22;
-const gama = 40;
+const banco = 3;
 
-if(alfa > beta && alfa > gama){console.log(alfa)}
-if(beta > alfa && beta > gama){console.log(beta)}
-if(gama > alfa && gama > beta){console.log(gama)}
+if(banco > 0){console.log("positive")} else if(banco < 0){console.log('negative')} else {console.log('zero')}
