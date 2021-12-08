@@ -106,10 +106,7 @@ Implemente uma função que adiciona uma tarefa personalizada ao calendário. A 
 O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
  */
 
-let task = document.createElement('span');
-task.innerText = "cozinhar"
 
-document.querySelector('.my-tasks').appendChild(task)
 
 /*Exercício 8:
 Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
@@ -117,12 +114,7 @@ O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
 O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
  */
 
-let subTitle = document.createElement('div')
 
-
-subTitle.classList.add('task');
-
-document.querySelector('.my-tasks').appendChild(subTitle)
 
 /* Exercício 9:
 Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
@@ -156,24 +148,29 @@ taskInput.addEventListener('keyup', function(event){
   })
 addBtn.addEventListener('click', newTask)
 
-
-function newTask(event){
+function newTask(){
 
     let newTask = document.createElement('span');
      newTask.innerText = taskInput.value 
     let newSubTitle = document.createElement('div');
      newSubTitle.classList.add('task');
      
+     
      if(taskInput.value !== ''){
      let br1 = document.createElement('br');
      let br2 = document.createElement('br');
+
+     document.querySelector('.my-tasks').appendChild(newTask)
+     document.querySelector('.my-tasks').appendChild(newSubTitle)
  
      document.querySelector('.my-tasks').appendChild(br1);
      document.querySelector('.my-tasks').appendChild(br2);
- 
      
-     document.querySelector('.my-tasks').appendChild(newTask)
-     document.querySelector('.my-tasks').appendChild(newSubTitle)
+     newSubTitle.addEventListener('click', function(){
+         newSubTitle.classList.toggle('selected')
+     })
+     
+     
      }
      if(taskInput.value === ''){alert('Preencha o campo com um compromisso')}
      
