@@ -119,7 +119,7 @@ O elemento criado deverá ser adicionado como filho/filha da tag <div> que possu
 
 let subTitle = document.createElement('div')
 
-subTitle.style.backgroundColor = "white";
+
 subTitle.classList.add('task');
 
 document.querySelector('.my-tasks').appendChild(subTitle)
@@ -128,7 +128,57 @@ document.querySelector('.my-tasks').appendChild(subTitle)
 Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
 Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada. */
 
-let taskSelect = document.querySelector('.my-tasks div');
-taskSelect.addEventListener('click', function(){
-    taskSelect.classList.toggle('task-selected')
-})
+/* Exercício 10:Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
+Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119)  */
+
+let myTasks = document.querySelectorAll('.my-tasks div');
+for(let i = 0; i < myTasks.length; i++){
+    let taskDivs = myTasks[i];
+    console.log(taskDivs)
+    taskDivs.addEventListener('click', function(){
+        taskDivs.classList.toggle('selected')
+    })
+}
+
+
+/* Bônus:
+Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
+Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
+Ao pressionar a tecla "enter" o evento também deverá ser disparado. */
+
+let addBtn = document.getElementById('btn-add');
+let taskInput = document.getElementById('task-input');
+
+
+taskInput.addEventListener('keyup', function(event){
+    event.preventDefault();
+    if(event.keyCode === 13){addBtn.click()}
+  })
+addBtn.addEventListener('click', newTask)
+
+
+function newTask(event){
+
+    let newTask = document.createElement('span');
+     newTask.innerText = taskInput.value 
+    let newSubTitle = document.createElement('div');
+     newSubTitle.classList.add('task');
+     
+     if(taskInput.value !== ''){
+     let br1 = document.createElement('br');
+     let br2 = document.createElement('br');
+ 
+     document.querySelector('.my-tasks').appendChild(br1);
+     document.querySelector('.my-tasks').appendChild(br2);
+ 
+     
+     document.querySelector('.my-tasks').appendChild(newTask)
+     document.querySelector('.my-tasks').appendChild(newSubTitle)
+     }
+     if(taskInput.value === ''){alert('Preencha o campo com um compromisso')}
+     
+     
+ 
+ }
+
+ 

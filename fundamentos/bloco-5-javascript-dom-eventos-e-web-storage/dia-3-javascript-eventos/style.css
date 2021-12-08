@@ -99,7 +99,7 @@
     font-weight: 500;
     letter-spacing: 3px;
     padding-bottom: 10px;
-    vertical-align: middle;
+    vertical-align: middle;    
   }
   
   .tasks-container {
@@ -164,6 +164,10 @@
     
   }
 
-  .task-selected {
-    background-color: red;
+  .selected {
+    background-color: green;
   }
+
+.span {
+  padding-left: 100px;
+}
