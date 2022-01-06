@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header><h1>Currículo</h1></header>
+    <header><h1 class="text-center">Currículo</h1></header>
     <main>
         <form action="">
             <div class="container">
@@ -44,25 +44,29 @@
                     <label for="moradia" class="form-check-label">Apartamento<br></label>
                 </div>
                    
-            </div>
-            <div class="container">
+                <hr>
+            
                 <p class="lead">Dados do seu último emprego</p>
-                <label for="resume-sumup">Resumo do currículo:</label><br>
-                <textarea name="resumo-cv" id="resume-sumup" cols="30" rows="10" maxlength="1000" required></textarea>
+                <div class="form-floating">
+                    
+                    <textarea class="form-control" name="resumo-cv" id="resume-sumup" cols="30" rows="10" maxlength="1000" required></textarea>
+                    <label for="resume-sumup">Resumo do currículo:</label>
+                </div>
                 <br>
-                <label for="occupation">Cargo:<br>
-                    <input id="occupation" type="text" required maxlength="40">
+                <label class="form-label" for="occupation">Cargo:<br>
+                    <input class="form-control" id="occupation" type="text" required maxlength="40">
                 </label><br>
-                <label for="job-desc">Descrição do cargo:<br>
-                    <input id="job-desc" type="text" required maxlength="500">
+                <label class="form-label" for="job-desc">Descrição do cargo:<br>
+                    <input class="form-control" id="job-desc" type="text" required maxlength="500">
                 </label><br>
-                <label for="start-date">Data de início:<br>
-                    <input id="start-date" type="text" placeholder="dd/mm/aaaa" required>
+                <label class="form-label" for="start-date">Data de início:<br>
+                    <input class="form-control" id="start-date" type="text" placeholder="dd/mm/aaaa" required>
                 </label><br>
-            </div>
-            <div>
-                <button id="submit-btn"type="submit">Enviar</button>
-                <button id="clear-btn" type="button">Limpar</button>
+            
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success"id="submit-btn"type="submit">Enviar</button>
+                    <button class="btn btn-danger" id="clear-btn" type="button">Limpar</button>
+                </div>
             </div>
         </form>
     </main>
