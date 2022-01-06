@@ -31,10 +31,10 @@
                 <label for="state">Estado:<br>
                     <select id="state" name="estados"></select>
                 </label><br>
-                <label for="type">Tipo:<br>
+                <label for="moradia">Tipo:<br></label>
                     <input id="type" type="radio" name="moradia" value="house" required>Casa
                     <input id="type" type="radio" name="moradia" value="apartment" required>Apartamento
-                </label><br>
+                <br>
             </fieldset>
             <fieldset>
                 <legend>Dados do seu último emprego</legend>
@@ -51,9 +51,13 @@
                     <input id="start-date" type="text" placeholder="dd/mm/aaaa" required>
                 </label><br>
             </fieldset>
-            <button type="submit">Enviar</button>
+            <div class="btn-div">
+                <button id="submit-btn"type="submit">Enviar</button>
+                <button id="clear-btn" type="button">Limpar</button>
+            </div>
         </form>
     </main>
-    
+    <section class="form-data"></section>
+    <script src="script.js"></script>
 </body>
 </html>
