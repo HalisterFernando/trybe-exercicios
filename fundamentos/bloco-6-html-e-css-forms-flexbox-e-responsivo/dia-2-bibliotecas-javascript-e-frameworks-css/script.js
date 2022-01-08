@@ -1,10 +1,14 @@
 window.onload = function (){
-    createStateOptions()
+    createStateOptions()  
 }
+
+
 
 const state = document.getElementById('state');
 const startDate = document.getElementById('start-date');
 const submit = document.getElementById('submit-btn');
+
+
 
 const states = { 
     'AC': 'Acre' ,
@@ -36,23 +40,24 @@ const states = {
     'TO': 'Tocantins' 
 }
 
+
+
+
+
+
+
 function createStateOptions(){
-for(let key in states){
-    let option = document.createElement('option');
-    option.setAttribute('value', key)
-    option.innerText = `${key} - ${states[key]}`
-    state.appendChild(option)
-}}
-
-submit.addEventListener('click', preventDefault)
-
-
-
-function dateCheck(){
-   let isValidDate = Date.parse(startDate.value)
-   if(isNaN(isValidDate)){alert ('Insira uma data no formato dd/mm/aaaa')}
-}
+    for(let key in states){
+        let option = document.createElement('option');
+        option.setAttribute('value', key)
+        option.innerText = `${key} - ${states[key]}`
+        state.appendChild(option)
+    }}
+    
 
 function preventDefault(e){
     e.preventDefault()
 }
+
+
+
