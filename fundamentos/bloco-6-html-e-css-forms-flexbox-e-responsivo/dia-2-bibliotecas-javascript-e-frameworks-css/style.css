@@ -8,10 +8,32 @@ header {
     margin-top: 20px;
 }
 
-.container {
-    background-color: white;
-    margin-bottom: 10px;
-    padding: 15px;
+main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    background-color: rgb(245, 245, 245);
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 15px 15px 25px rgb(105, 105, 105);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+}
+
+#state {
+    margin: 20px 0 20px 0
+}
+
+#house-type-radio-group {
+    margin-bottom: 20px;
+}
+
+#resume-sumup {
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+#start-date {
+    margin-bottom: 20px;
 }

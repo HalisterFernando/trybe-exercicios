@@ -2,14 +2,6 @@ window.onload = function (){
     createStateOptions()  
 }
 
-
-
-const state = document.getElementById('state');
-const startDate = document.getElementById('start-date');
-const submit = document.getElementById('submit-btn');
-
-
-
 const states = { 
     'AC': 'Acre' ,
     'AL': 'Alagoas',
@@ -41,9 +33,10 @@ const states = {
 }
 
 
-
-
-
+const state = document.getElementById('state');
+const startDate = document.getElementById('start-date');
+const submit = document.getElementById('submit-btn');
+const resetBtn = document.getElementById('reset-btn');
 
 
 function createStateOptions(){
@@ -54,10 +47,3 @@ function createStateOptions(){
         state.appendChild(option)
     }}
     
-
-function preventDefault(e){
-    e.preventDefault()
-}
-
-
-

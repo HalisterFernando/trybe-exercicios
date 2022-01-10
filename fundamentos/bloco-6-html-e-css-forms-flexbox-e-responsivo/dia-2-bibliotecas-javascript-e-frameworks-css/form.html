@@ -13,9 +13,9 @@
 </head>
 <body>
     <header><h1 class="text-center">Currículo</h1></header>
-    <main>
-        <p>Dados Pessoais</p>
+    <main>        
         <form action="#" id="form" autocomplete="off">
+            <p class="lead">Dados Pessoais</p>
             <label for="name" class="form-label">Nome:</label>
             <input 
             type="text" 
@@ -73,7 +73,7 @@
                     <label class="form-check-label" for="house">Apartamento</label>
                 </div>
             </div>
-            <p>Dados do seu último emprego:</p>
+            <p class="lead">Dados do seu último emprego:</p>
             <div class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment here" id="resume-sumup"></textarea>
                 <label for="resume-sumup">Resumo do currículo</label>
@@ -86,7 +86,7 @@
             name="role" 
             id="role"
             />
-            <label for="role" class="form-label">Descrição do cargo:</label>
+            <label for="role-description" class="form-label">Descrição do cargo:</label>
             <input 
             type="text" 
             class="form-control" 
@@ -103,7 +103,7 @@
             id="start-date"
             />
             <button type="submit" class="btn btn-success" id="submit-btn">Enviar</button>
-            <button type="reset" class="btn btn-danger">Limpar</button>
+            <button type="reset" class="btn btn-danger" id="reset-btn">Limpar</button>
         </form>
     </main>    
     <script src="script.js"></script>
@@ -168,6 +168,10 @@
       errorMessage: 'CPF obrigatório',
         },
         {
+          rule: 'number',
+          errorMessage: 'CPF inválido'
+        },
+        {
       rule: 'minLength',
       value: 11,
         },
@@ -202,7 +206,37 @@
       errorMessage: 'Estado obrigatório',
         },
         ])
-        .addRequiredGroup('#house-type-radio-group')  
+        .addRequiredGroup('#house-type-radio-group')
+        .addField('#resume-sumup', [
+          {
+            rule: 'required',
+            errorMessage: "Escreva um resumo do seu currículo"
+          },
+          {
+            rule: 'maxLength',
+            value: 1000
+          }
+        ])
+        .addField('#role', [
+          {
+            rule: 'required',
+            errorMessage: "Coloque o nome do seu cargo"
+          },
+          {
+            rule: 'maxLength',
+            value: 40
+          }
+        ])   
+        .addField('#role-description', [
+          {
+            rule: 'required',
+            errorMessage: "Descreva seu cargo"
+          },
+          {
+            rule: 'maxLength',
+            value: 500
+          }
+        ]) 
     </script>     
 
    
