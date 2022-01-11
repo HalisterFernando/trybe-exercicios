@@ -31,8 +31,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 4-1: _JavaScript - Primeiros passos_
 - [X] 4-2: _JavaScript - Array e loop For_
-- [X] 4-3: _JavaScript - LÃ³gica de ProgramaÃ§Ã£o e Algoritmos_
-- [X] 4-4: _JavaScript - Objetos e funÃ§Ãµes_
+- [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [X] 4-4: _JavaScript - Objetos e funções_
 - [X] 4-5: _[Projeto - Playground Functions]()_
 
 ##### Bloco 5: IntroduÃ§Ã£o - JavaScript - Projetos
@@ -47,14 +47,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [X] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS avanÃ§ado
+##### Bloco 6: HTML & CSS - Forms, Flexbox e Responsivo
 
 - [X] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flexbox - Part 1_
-- [ ] 6-4: _CSS Flexbox - Part 2_
-- [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
+- [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [X] 6-3: _CSS Flexbox - Part 1_
+- [X] 6-4: _CSS Flexbox - Part 2_
+- [X] 6-5: _CSS Responsivo - Mobile First_
+- [X] 6-6: _[Projeto - Trybewarts]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes UnitÃ¡rios
 
